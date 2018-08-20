@@ -1,4 +1,10 @@
-﻿using System.Reflection;
+﻿//-----------------------------------------------------------------------
+// <copyright file="AssemblyInfo.cs" company="Artisans">
+// Copyright (c) Artisans. All rights reserved.
+// </copyright>
+// <author>Elena Gertsiy</author>
+//-------------------------------------------------------------------
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
