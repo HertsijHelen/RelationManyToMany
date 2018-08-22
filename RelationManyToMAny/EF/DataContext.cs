@@ -1,23 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Data.Entity;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+//-----------------------------------------------------------------------
+// <copyright file="RelationManyTMany.EF.cs" company="Artisans">
+//     Copyright (c) Artisans. All rights reserved.
+// </copyright>
+// <author>Elena Gertsiy</author>
+//-----------------------------------------------------------------------
 
 namespace RelationManyToMAny.EF
 {
-    public class DataContext:DbContext
+    using System.Data.Entity;
+
+    public class DataContext : DbContext
     {
         public DataContext()
            : base("DefaultConnection")
         {
         }
-
         public DbSet<Item> Items { get; set; }
         public DbSet<Section> Sections { get; set; }
-        public DbSet<ItemSection> ItemSections { get; set; }
-       
+        public DbSet<ItemSection> ItemSections { get; set; }       
     }
 }
