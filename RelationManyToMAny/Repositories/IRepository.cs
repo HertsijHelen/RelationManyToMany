@@ -10,6 +10,10 @@ namespace RelationManyToMAny.Repositories
     using System;
     using System.Collections.Generic;
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public interface IRepository<T> : IDisposable
         where T : class
     {
@@ -27,7 +31,7 @@ namespace RelationManyToMAny.Repositories
         T Create(T item);
 
         /// <summary>
-        /// Update a recod Employees table by id
+        /// Update a recod from table by id
         /// </summary>
         /// <param name="id">id of record wich need to update</param>
         /// <param name="item">a record wich update</param>
@@ -35,7 +39,7 @@ namespace RelationManyToMAny.Repositories
         bool Update(int id, T item);
 
         /// <summary>
-        /// Remove a record from Employees table by id
+        /// Remove a record from table by id
         /// </summary>
         /// <param name="id">id of record wich delete</param>
         /// <returns></returns>
